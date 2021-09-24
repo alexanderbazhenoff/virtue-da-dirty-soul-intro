@@ -2,7 +2,7 @@
 
 An intro for 'Virtue Da Dirty Soul' game by Green Bit Group on ZX-Spectrum.
 
-[![virtue-da-dirty-soul on zxart.ee](https://spectrumcomputing.co.uk/SCRtoImage.php?SCR=pub/sinclair/screens/load/v/scr/VirtueDaDirtySoul.scr)](https://zxart.ee/rus/soft/game/adventure/textillustrated/virtue-da-dirty-soul/virtue-da-dirty-soul/)
+[![virtue-da-dirty-soul on zxart.ee](https://worldofspectrum.org//scr2gif?file=pub/sinclair/screens/load/v/scr/VirtueDaDirtySoul.scr)](https://zxart.ee/rus/soft/game/adventure/textillustrated/virtue-da-dirty-soul/virtue-da-dirty-soul/)
 
 ## TLDR
 
