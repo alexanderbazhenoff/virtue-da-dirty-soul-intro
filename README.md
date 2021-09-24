@@ -14,7 +14,7 @@ This intro was written by an hour or so with 'gigascreen' ZX-Spectrum effect usa
 
 ## Story
 
-A short intro which was based on c-jeff's (now seajeff's) ideas then. Made specially for final version of the game wich was totally repacked and re-linked. I had to clear system variables and other useless data from the game code block, so I run this game over 100 times those night. As the result I still remember every note from the music... Fun days!
+A short intro which was based on c-jeff's (now seajeff's) ideas then. Made specially for final version of the game wich was totally repacked and re-linked. I had to clear system variables and other useless data from the game code block, so I run this game over 100 times those night. As the result I still remember every note from the music... Anyway 18 years later I like this co-work, this prod looks good and fun enough.
 
 ## Related
 
