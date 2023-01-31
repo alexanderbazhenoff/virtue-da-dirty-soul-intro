@@ -6,15 +6,22 @@ An intro for **'Virtue Da Dirty Soul'** ZX-Spectrum game by Green Bit Group.
 
 ## TLDR
 
-This sources is a Zilog Z80 Assembler in Alasm format. You should import and compile this source in [Alasm](https://zxart.ee/rus/soft/tool/music/pro-tracker-alasm/qid:365628/) ZX-Spectrum assembler [(I have used v5.08)](https://speccy.info/ALASM) to compile. Or convert this source manually for [SjASMPlus](http://speccy.info/SjASMPlus) which is crossplatform.
+These sources are for Zilog Z80 Assembler in Alasm format. You should import and compile this source in
+[Alasm](https://zxart.ee/rus/soft/tool/music/pro-tracker-alasm/qid:365628/) ZX-Spectrum assembler
+[(I have used v5.08)](https://speccy.info/ALASM) to compile. Or convert this source manually for 
+[SjASMPlus](http://speccy.info/SjASMPlus) which is cross-platform.
 
 ## Technical info
 
-This intro was written by an hour or so with 'gigascreen' ZX-Spectrum effect usage, 25fps colour blinking that allows you to mix colour pallete.
+This intro was written by an hour or so with 'giga-screen' ZX-Spectrum effect usage, 25fps colour blinking that allows 
+you to mix colour palette.
 
 ## Story
 
-A short intro which was based on c-jeff's (now seajeff's) ideas then. Made specially for final version of the game wich was totally repacked and re-linked. I had to clear system variables and other useless data from the game code block, so I run this game over 100 times those night. As the result I still remember every note from the music... Anyway 18 years later I like this co-work, this prod looks good and fun enough.
+A short intro which was based on c-jeff's (now seajeff's) ideas then. Made specially for final version of the game which
+was totally repacked and re-linked. I had to clear system variables and other useless data from the game code block, so
+I run this game over 100 times those night. As the result I still remember every note from the music... Anyway 18 years
+later I like this co-work, this prod looks good and fun enough.
 
 ## Related
 
