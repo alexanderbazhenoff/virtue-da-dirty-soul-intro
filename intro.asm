@@ -1,5 +1,14 @@
         ORG #6100
 
+; Virtue Da Dirty Soul game mini-intro
+; Coded by Bazhenov Alexander (alx/brainwave), 24.01.2003
+
+; This Source Code Form is subject to the terms of the
+; BSD 3-Clause License. If a copy of the source(s)
+; distributed with this file, You can obtain one at:
+; https://github.com/alexanderbazhenoff/virtue-da-dirty-soul-intro
+
+
 LOGOATR1_ADR    EQU #7600
 FONT_ADR        EQU LOGOATR1_ADR+#200
 LOGO_ADR        EQU FONT_ADR+#800
@@ -23,13 +32,13 @@ ATTRADR EQU #5920
  DISPLAY ", mini intro special for virtue game |"
  DISPLAY "| coded by alx^brainwave z4.oi.zoo3! '"
  DISPLAY "+-- - -  -    -                -  - -+"
- DISPLAY 
+ DISPLAY
 
         LD (STEK_RET),SP
         LD HL,SRCMUS
         LD DE,MUS_ADR
         LD BC,ESRCMUS-SRCMUS
-        LDIR 
+        LDIR
         CALL CLS
         INC HL
 ;       LD HL,#4000
@@ -58,7 +67,7 @@ IM2_INS LD (HL),A
         INC HL
         LD (HL),'INTER
         IM 2
-        EI 
+        EI
         CALL CL_TXT
 
 LOOP    LD HL,TEXT1
@@ -79,14 +88,14 @@ EXIT;   EI
         LD (AFL_SW),A
         LD (SW_EXIT),A
         CALL FILL_ATTR
-        EI 
+        EI
 
         LD SP,#3131
 STEK_RET EQU $-2
         LD B,8
 FAD_DSL PUSH BC
-        HALT 
-        HALT 
+        HALT
+        HALT
         LD HL,LOGOATR1_ADR
         LD BC,#200
         CALL FAD_LP
@@ -107,12 +116,12 @@ NOFADE0 INC HL
         LD B,3
         PUSH HL
         PUSH BC
-        LDIR 
+        LDIR
         POP BC
         POP HL
         LD DE,ATRBUF
         PUSH DE
-        LDIR 
+        LDIR
         POP HL
         LD B,6
         LD DE,ATRBUF+#1200
@@ -124,7 +133,7 @@ SFAD_L  PUSH BC
         POP DE
         POP HL
         LD B,3
-        LDIR 
+        LDIR
         LD A,D
         SUB 6
         LD D,A
@@ -137,24 +146,24 @@ SFAD_L  PUSH BC
 OUT_L   PUSH BC
         LD D,#58
         LD B,3
-        EI 
+        EI
         DUP 2
-        HALT 
-        EDUP 
-        LDIR 
+        HALT
+        EDUP
+        LDIR
         POP BC
         DJNZ OUT_L
 
         CALL MUS_ADR+8
-        DI 
+        DI
         LD A,#3F
         LD I,A
         IM 1
         LD HL,#2758
         LD IY,#5C3A
-        EXX 
-        EI 
-        RET 
+        EXX
+        EI
+        RET
 
 
 PAGE
@@ -162,10 +171,10 @@ PAGE
         CALL OUT_TEXT
 SCAN_ENTER
         LD DE,PAGE_PAUSE
-SCAN_EL HALT 
+SCAN_EL HALT
         LD BC,#BFFE
         IN A,(C)
-        RRA 
+        RRA
         JR NC,ENTER_PRESSED
         DEC DE
         LD A,D
@@ -188,7 +197,7 @@ CLEAR_SCR_L
         PUSH BC
         PUSH HL
         PUSH DE
-        HALT 
+        HALT
 CLEAR_SCR_L1
         LD A,(HL)
         RES 7,H
@@ -212,18 +221,18 @@ CLEAR_SCR_L1
         JR NZ,CLEAR_SCR_L
         POP HL
         LD (HL),H
-        RET 
+        RET
 
 CL_TXT
         LD HL,TXTSH_BUF+#800
         LD DE,TXTSH_BUF+#801
         LD BC,#FFF
         LD (HL),L
-        LDIR 
-        RET 
+        LDIR
+        RET
 
 ;-------int routines-------
-INTER   DI 
+INTER   DI
         PUSH AF,BC,DE,HL
         EX AF,AF'
         PUSH AF
@@ -233,7 +242,7 @@ SW_M    EQU $-1
         JP Z,NO_M
         LD A,#77
 HOOY1   EQU $-1
-        RRCA 
+        RRCA
         LD (HOOY1),A
         LD HL,#46E0+#20
         LD (STEK),SP
@@ -242,7 +251,7 @@ HOOY1   EQU $-1
         LD C,A
         DUP #10
         PUSH BC
-        EDUP 
+        EDUP
         LD SP,#3131
 STEK    EQU $-2
 
@@ -254,8 +263,8 @@ ATTR_ADDR EQU $-2
         LD (ATTR_ADDR),HL
         LD DE,#5800
         DUP 256
-        LDI 
-        EDUP 
+        LDI
+        EDUP
 NO_M
         CALL MUS_ADR+5
         LD A,#3E
@@ -284,7 +293,7 @@ ATTR_FLASH
         LD A,L
         DUP 3
         ADD A,A
-        EDUP 
+        EDUP
         LD L,A
         LD A,8
         CALL IN_AY_REG
@@ -311,14 +320,14 @@ SW_EXIT EQU $-1
 
         LD BC,#7FFE
         IN A,(C)
-        RRA 
+        RRA
         JP NC,EXIT
 NO_EXITK
         POP AF
         EX AF,AF'
         POP HL,DE,BC,AF
-        EI 
-        RET 
+        EI
+        RET
 
 ATTR_FP_AC
         LD L,7
@@ -332,7 +341,7 @@ ATTR_FP_AC
         CP #9
         RET Z
         DEC L
-        RET 
+        RET
 
 LFLASH  LD A,(DE)
         OR A
@@ -351,7 +360,7 @@ IN_AY_REG
         LD BC,#FFFD
         OUT (C),A
         IN A,(C)
-        RET 
+        RET
 
         ;PRINT_LOOP - несколько символов ;)
         ;HL=text_addr
@@ -363,21 +372,21 @@ IN_AY_REG
         ;A=sybol
         ;BC=yx coords
 
-CLS     EI 
-        HALT 
+CLS     EI
+        HALT
         LD HL,#5800
         PUSH HL
         LD DE,#5801
         LD BC,#02FF
         LD (HL),L
-        LDIR 
+        LDIR
         LD A,C
         POP HL
 CLS_L   DEC HL
         LD (HL),A
         CP (HL)
         JR Z,CLS_L
-        RET 
+        RET
 
 PRINT_LOOP
         LD A,(HL)
@@ -400,8 +409,8 @@ PRINT_LOOP
         LD A,B
         AND 7
         DUP 3
-        RRCA 
-        EDUP 
+        RRCA
+        EDUP
         ADD A,C
         LD E,A
 
@@ -410,14 +419,14 @@ PRINT_LOOP
         LD L,A
         DUP 3
         ADD HL,HL
-        EDUP 
+        EDUP
         LD BC,FONT
         ADD HL,BC
         POP BC
         BIT 0,C
         LD A,#0F
         JR NZ,MASK0F
-        CPL 
+        CPL
 MASK0F  LD C,A
         EX DE,HL
         DUP 7
@@ -427,7 +436,7 @@ MASK0F  LD C,A
         LD (HL),A
         INC DE
         INC H
-        EDUP 
+        EDUP
         LD A,(DE)
         AND C
         OR (HL)
@@ -470,13 +479,13 @@ FILL_L
         LD SP,HL
         DUP SIZE_X
         PUSH DE
-        EDUP 
+        EDUP
         ADD HL,BC
         DEC A
         JR NZ,FILL_L
         LD SP,#3131
 STEKFILL EQU $-2
-        RET 
+        RET
 
 SCR_CONV
 LLOOP   PUSH BC
@@ -491,7 +500,7 @@ LLOOP1  LD A,(DE)
         POP BC
         DEC C
         JR NZ,LLOOP
-        RET 
+        RET
 
 DOWN_HL2
         CALL DOWN_HL
@@ -506,7 +515,7 @@ DOWN_HL INC H
         AND #F8
         ADD A,H
         LD H,A
-        RET 
+        RET
 
 
 FADE_   LD BC,#300
@@ -529,7 +538,7 @@ NODPAP  LD (HL),D
         LD A,B
         OR C
         JR NZ,FAD_LP
-        RET 
+        RET
 
 ENDCODE DISPLAY "lenght code: ",ENDCODE-#6100
 
@@ -620,11 +629,11 @@ TEXT4   DB #10,0,8
         INCBIN "starasci.t"
         DB 0
 
-        DISPLAY 
+        DISPLAY
 ENDTEXT DISPLAY "lenght of text: ",ENDTEXT-ENDCODE
         DISPLAY "end of text: ",ENDTEXT
         DISPLAY /L," (max=#73FF!!!)"
-        DISPLAY 
+        DISPLAY
 
         ORG FONT_ADR
 FONT    INCBIN "Crazzy.f"
