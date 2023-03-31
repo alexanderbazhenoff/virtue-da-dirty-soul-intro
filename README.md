@@ -13,8 +13,9 @@ These sources are for Zilog Z80 Assembler in Alasm format. You should import and
 
 ## Technical info
 
-This intro was written by an hour or so with 'giga-screen' ZX-Spectrum effect usage, 25fps colour blinking that allows 
-you to mix colour palette.
+This intro was written by an hour or so with 
+['software giga-screen'](https://en.wikipedia.org/wiki/ZX_Spectrum_graphic_modes) ZX-Spectrum effect usage, 25fps colour
+blinking that allows you to mix colour palette.
 
 ## Story
 
@@ -23,15 +24,51 @@ was totally repacked and re-linked. I had to clear system variables and other us
 I run this game over 100 times those night. As the result I still remember every note from the music... Anyway 18 years
 later I like this co-work, this prod looks good and fun enough.
 
+## Credits
+
+```
+                  j._
+     g.r.e.e.n b.I.`#$\r.o.u.p                 _.
+   ..............`?$$@$#Ob,._......._.,dO#$Z$$b'.............
+   ::::::::::::::::`?b\._`?$?:$S@$$Ob, :b\._d?'::::::::::::::
+   ::::::::::::::::::'?z$$P'.S$$:::_.?$:?$S$'::::::::::::::::
+   :::::::::::::::::::`$#$.:::'?#$S$?P'::`$#.::::::::::cjf:::
+   :::::::::::::::::::.J$?'::::::::::::::.?$P::::::::::::::::
+                  _.do$S?'          _.zoS$P' .2.o.o.3.
+```
+
+- mini-intro coded by **alx/brainwave** (Alexander Bazhenov) [[speccywiki](https://speccy.info/Alx) |
+[zxart.ee](https://zxart.ee/rus/avtory/a/alx/qid:602008/)].
+- mini-intro logo and music, game programming by **c-jeff/green bit group** (c-jeff/brainwave then seajeff, Dmitry 
+Zhemkov) [[speccywiki](https://speccy.info/C-jeff) | [zxart.ee](https://zxart.ee/rus/avtory/c/c-jeff/qid:602010/)].
+- game graphics *(game sources not included in this repository)* by **dimidrol/green bit group** (Dmitry Bakhtin)
+[[speccywiki](https://speccy.info/Dimidrol) | [zxart.ee](https://zxart.ee/rus/avtory/d/dimidrol/qid:602007/)].
+
+## Project content
+```
+.
+├── Crazzy.f.bin                                - intro font
+├── intro.asm                                   - intro sources
+├── LICENSE                                     - license file
+├── logoatr1.C.bin                              - 1st screen intro logo attributes
+├── logoatr2.C.bin                              - 2nd screen intro logo attributes
+├── logo.C.bin                                  - intro logo graphics
+├── PICTURE.C.bin                               - loading 6912b game screen in columns format
+├── README.md                                   - this file
+├── starasci.t.bin                              - ascii
+├── star_mu1.C.bin                              - intro music
+└── virtue_intro_screenshot(crt_filtered).png   - screenshot of the erliest version of intro
+```
+
 ## Related
 
-- [worldofspectrum.org](https://worldofspectrum.org/archive/software/text-adventures/virtue-da-dirty-soul-green-bit)
-- [zxart.ee](https://zxart.ee/rus/soft/game/adventure/textillustrated/virtue-da-dirty-soul/virtue-da-dirty-soul/)
-- [spectrumcomputing.co.uk](https://spectrumcomputing.co.uk/index.php?cat=96&id=20747&__cf_chl_managed_tk__=pmd_X.cN3TQMHuk5Uln9ps4acrwdieQspYRax9aYF47gAYg-1632442789-0-gqNtZGzNAxCjcnBszRI9)
+- [**worldofspectrum.org**](https://worldofspectrum.org/archive/software/text-adventures/virtue-da-dirty-soul-green-bit)
+- [**zxart.ee**](https://zxart.ee/rus/soft/game/adventure/textillustrated/virtue-da-dirty-soul/virtue-da-dirty-soul/)
+- [**spectrumcomputing.co.uk**](https://spectrumcomputing.co.uk/index.php?cat=96&id=20747&__cf_chl_managed_tk__=pmd_X.cN3TQMHuk5Uln9ps4acrwdieQspYRax9aYF47gAYg-1632442789-0-gqNtZGzNAxCjcnBszRI9)
 
 ## About
 
-- [Green Bit Group on speccywiki](https://speccy.info/Green_Bit_Group)
-- [brainwave on speccywiki](http://speccy.info/Brainwave)
-- [wikipedia](https://ru.wikipedia.org/wiki/Brainwave_team)
+- [**Green Bit Group on speccywiki**](https://speccy.info/Green_Bit_Group)
+- [**brainwave on speccywiki**](http://speccy.info/Brainwave)
+- [**brainwave on wikipedia**](https://ru.wikipedia.org/wiki/Brainwave_team)
 
