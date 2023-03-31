@@ -14,15 +14,15 @@ These sources are for Zilog Z80 Assembler in Alasm format. You should import and
 ## Technical info
 
 This intro was written by an hour or so with 
-['software giga-screen'](https://en.wikipedia.org/wiki/ZX_Spectrum_graphic_modes) ZX-Spectrum effect usage, 25fps colour
+'[software giga-screen](https://en.wikipedia.org/wiki/ZX_Spectrum_graphic_modes)' ZX-Spectrum effect usage, 25fps colour
 blinking that allows you to mix colour palette.
 
 ## Story
 
-A short intro which was based on c-jeff's (now seajeff's) ideas then. Made specially for final version of the game which
-was totally repacked and re-linked. I had to clear system variables and other useless data from the game code block, so
-I run this game over 100 times those night. As the result I still remember every note from the music... Anyway 18 years
-later I like this co-work, this prod looks good and fun enough.
+A short intro which was based on C-jeff's (now [Seajeff](https://seajeff.com/)'s) ideas then. Made specially for final
+version of the game which was totally repacked and re-linked. I had to clear system variables and other useless data
+from the game code block, so I run this game over 100 times those night. As the result I still remember every note from 
+the music... Anyway 18 years later I like this co-work, this prod looks good and fun enough.
 
 ## Credits
 
@@ -37,11 +37,12 @@ later I like this co-work, this prod looks good and fun enough.
                   _.do$S?'          _.zoS$P' .2.o.o.3.
 ```
 
-- mini-intro coded by **alx/brainwave** (Alexander Bazhenov) [[speccywiki](https://speccy.info/Alx) |
+- mini-intro coded by **Alx/Brainwave** (Alexander Bazhenov) [[speccywiki](https://speccy.info/Alx) |
 [zxart.ee](https://zxart.ee/rus/avtory/a/alx/qid:602008/)].
-- mini-intro logo and music, game programming by **c-jeff/green bit group** (c-jeff/brainwave then seajeff, Dmitry 
-Zhemkov) [[speccywiki](https://speccy.info/C-jeff) | [zxart.ee](https://zxart.ee/rus/avtory/c/c-jeff/qid:602010/)].
-- game graphics *(game sources not included in this repository)* by **dimidrol/green bit group** (Dmitry Bakhtin)
+- mini-intro logo and music, game programming by **C-jeff/Green Bit Group** (C-jeff/Brainwave then 
+[Seajeff](https://seajeff.com/), Dmitry Zhemkov) [[speccywiki](https://speccy.info/C-jeff) | 
+[zxart.ee](https://zxart.ee/rus/avtory/c/c-jeff/qid:602010/)].
+- game graphics *(game sources not included in this repository)* by **Dimidrol/Green Bit Group** (Dmitry Bakhtin)
 [[speccywiki](https://speccy.info/Dimidrol) | [zxart.ee](https://zxart.ee/rus/avtory/d/dimidrol/qid:602007/)].
 
 ## Project content
