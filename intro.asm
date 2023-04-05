@@ -3,10 +3,9 @@
 ; Virtue Da Dirty Soul game mini-intro
 ; Coded by Bazhenov Alexander (alx/brainwave), 24.01.2003
 
-; This Source Code Form is subject to the terms of the
-; BSD 3-Clause License. If a copy of the source(s)
-; distributed with this file, You can obtain one at:
-; https://github.com/alexanderbazhenoff/virtue-da-dirty-soul-intro
+; This Source Code Form is subject to the terms of the Mozilla
+; Public License, v. 2.0. If a copy of the MPL was not distributed
+; with this file, You can obtain one at http://mozilla.org/MPL/2.0/.
 
 
 LOGOATR1_ADR    EQU #7600
